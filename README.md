@@ -38,6 +38,7 @@ cd random-bg-changer
 Abra o arquivo index.html em um navegador.
 
 Clique no botão "Change Background Color" para alterar a cor de fundo.
+
 📖 Créditos
 
 Este projeto foi inspirado em um tutorial do freeCodeCamp e aprimorado para evitar a repetição consecutiva de cores.
