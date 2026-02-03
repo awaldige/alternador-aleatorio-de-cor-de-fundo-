@@ -1,44 +1,48 @@
-Random Background Color Changer
+# 🎨 Random Background Color Changer
 
-Este projeto é um Random Background Color Changer (Alterador Aleatório de Cor de Fundo), desenvolvido com HTML, CSS e JavaScript. O projeto foi criado seguindo um tutorial do freeCodeCamp, permitindo ao usuário mudar a cor de fundo da página para tons escuros aleatórios ao clicar em um botão.
+Este projeto é um **alterador aleatório de cor de fundo**, desenvolvido com **HTML**, **CSS** e **JavaScript**, inspirado em um tutorial do **freeCodeCamp**.
 
-🚀 Tecnologias Utilizadas
+A aplicação permite ao usuário mudar a cor de fundo da página para tons escuros aleatórios ao clicar em um botão, exibindo também o código da cor atual.
 
-HTML5
+## 🚀 Tecnologias Utilizadas
 
-CSS3
+- HTML5
+- CSS3
+- JavaScript (Manipulação do DOM)
 
-JavaScript (DOM Manipulation)
+## 🎨 Funcionalidades
 
-🎨 Funcionalidades
+- Alteração do fundo da página para uma cor escura aleatória
+- Exibição do código hexadecimal da cor atual
+- Uso de lista predefinida de cores escuras
+- Lógica para evitar repetição consecutiva de cores
 
-Altera a cor de fundo da página para um tom escuro aleatório.
+## 📂 Estrutura do Projeto
 
-Exibe o código hexadecimal da cor de fundo atual.
+random-bg-changer/
+├── index.html # Estrutura da página
+├── styles.css # Estilos da interface
+└── script.js # Lógica de mudança de cor
 
-Utiliza um array predefinido de cores escuras.
+🌐 Acesse o Projeto Online
 
-📂 Estrutura do Projeto
+🔗
 
-/random-bg-changer
-│── index.html    # Estrutura da página
-│── styles.css    # Estilização do layout
-└── script.js     # Lógica da mudança de cor
+## 💻 Como Usar
 
-📜 Como Usar
+1. Clone o repositório:
 
-Clone este repositório:
-
+```bash
 git clone https://github.com/seu-usuario/random-bg-changer.git
-
 Acesse a pasta do projeto:
 
 cd random-bg-changer
+Abra o arquivo index.html em seu navegador.
 
-Abra o arquivo index.html em um navegador.
-
-Clique no botão "Change Background Color" para alterar a cor de fundo.
+Clique no botão Change Background Color para alterar o fundo.
 
 📖 Créditos
+Projeto inspirado em exercícios e tutoriais do freeCodeCamp, com pequenas melhorias implementadas.
 
-Este projeto foi inspirado em um tutorial do freeCodeCamp e aprimorado para evitar a repetição consecutiva de cores.
+📜 Licença
+Este projeto está disponível para uso livre para fins educacionais e de aprendizado.
