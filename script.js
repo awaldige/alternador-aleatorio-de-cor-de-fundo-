@@ -1,92 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Build a random background color changer</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <h1>Random Background Color changer</h1>
+const btn = document.getElementById("btn");
+const hexText = document.getElementById("bg-hex-code");
 
-    <main>
-      <section class="bg-information-container">
-        <p>Hex Code: <span id="bg-hex-code">#110815</span></p>
-      </section>
+const hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
-      <button class="btn" id="btn">Change Background Color</button>
-    </main>
-    <script src="./script.js"></script>
-  </body>
-</html>
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+function getRandomHex() {
+  let hexColor = "#";
+  for (let i = 0; i < 6; i++) {
+    const randomIndex = Math.floor(Math.random() * hexValues.length);
+    hexColor += hexValues[randomIndex];
+  }
+  return hexColor;
 }
 
-:root {
-  --yellow: #f1be32;
-  --golden-yellow: #feac32;
-  --dark-purple: #110815;
-  --light-grey: #efefef;
-}
-
-body {
-  background-color: var(--dark-purple);
-  color: var(--light-grey);
-  text-align: center;
-}
-
-.bg-information-container {
-  margin: 15px 0 25px;
-  font-size: 1.2rem;
-}
-
-.btn {
-  cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  color: var(--dark-purple);
-  background-color: var(--golden-yellow);
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border-color: var(--golden-yellow);
-  border-width: 3px;
-}
-
-.btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
-}
-
-const darkColorsArr = [
-  "#2C3E50",
-  "#34495E",
-  "#2C2C2C",
-  "#616A6B",
-  "#4A235A",
-  "#2F4F4F",
-  "#0E4B5A",
-  "#36454F",
-  "#2C3E50",
-  "#800020",
-];
-
-function getRandomIndex() {
-  const randomIndex = Math.floor(darkColorsArr.length * Math.random());
-  return randomIndex;
-}
-
-const body = document.querySelector("body");
-const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
-
-function changeBackgroundColor() {
-  const color = darkColorsArr[getRandomIndex()];
-
-  bgHexCodeSpanElement.innerText = color;
-  body.style.backgroundColor = color;
-}
-const btn = document.querySelector("#btn");
-
-btn.onclick = changeBackgroundColor
+btn.addEventListener("click", () => {
+  const newColor = getRandomHex();
+  document.body.style.backgroundColor = newColor;
+  hexText.innerText = newColor;
+});
