@@ -1,48 +1,109 @@
-# 🎨 Random Background Color Changer
+# 🎨 Alternador Aleatório de Cor de Fundo
 
-Este projeto é um **alterador aleatório de cor de fundo**, desenvolvido com **HTML**, **CSS** e **JavaScript**, inspirado em um tutorial do **freeCodeCamp**.
+Projeto front-end desenvolvido com **HTML5, CSS3 e JavaScript**, inspirado em exercícios do freeCodeCamp.
 
-A aplicação permite ao usuário mudar a cor de fundo da página para tons escuros aleatórios ao clicar em um botão, exibindo também o código da cor atual.
+A aplicação permite alterar a cor de fundo da página por meio de um botão, exibindo o código hexadecimal da cor selecionada. A lógica utiliza uma lista predefinida de tons escuros e evita a repetição consecutiva da mesma cor.
 
-## 🚀 Tecnologias Utilizadas
+---
 
-- HTML5
-- CSS3
-- JavaScript (Manipulação do DOM)
+## 🌐 Demonstração Online
 
-## 🎨 Funcionalidades
+🎨 **[Experimentar o Alternador de Cores](https://awaldige.github.io/alternador-aleatorio-de-cor-de-fundo-/)**
 
-- Alteração do fundo da página para uma cor escura aleatória
-- Exibição do código hexadecimal da cor atual
-- Uso de lista predefinida de cores escuras
-- Lógica para evitar repetição consecutiva de cores
+---
+
+## ✨ Funcionalidades
+
+- 🎨 Alteração aleatória da cor de fundo
+- 🌑 Seleção de tons escuros de uma lista predefinida
+- 🔢 Exibição do código hexadecimal da cor atual
+- 🔄 Prevenção de repetição consecutiva de cores
+- 🖱️ Interação por meio de botão
+- ⚡ Interface leve, executada diretamente no navegador
+
+---
+
+## 🖼️ Demonstração Visual
+
+Adicione uma captura de tela real da aplicação mostrando a cor de fundo, o código hexadecimal e o botão de alteração.
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+| Tecnologia | Aplicação |
+|---|---|
+| HTML5 | Estrutura da página |
+| CSS3 | Estilização e apresentação visual |
+| JavaScript | Geração de cores e interatividade |
+| DOM | Atualização dos elementos da página |
+
+---
 
 ## 📂 Estrutura do Projeto
 
-random-bg-changer/
-├── index.html # Estrutura da página
-├── styles.css # Estilos da interface
-└── script.js # Lógica de mudança de cor
+```text
+alternador-aleatorio-de-cor-de-fundo-/
+├── index.html    # Estrutura da aplicação
+├── styles.css    # Estilos da interface
+├── script.js     # Lógica de alteração das cores
+└── README.md     # Documentação do projeto
+```
 
-🌐 Acesse o Projeto Online
+---
 
-🔗 https://awaldige.github.io/alternador-aleatorio-de-cor-de-fundo-/
-
-## 💻 Como Usar
+## ▶️ Como Executar Localmente
 
 1. Clone o repositório:
 
-```bash
-git clone https://github.com/seu-usuario/random-bg-changer.git
-Acesse a pasta do projeto:
+   ```bash
+   git clone https://github.com/awaldige/alternador-aleatorio-de-cor-de-fundo-.git
+   ```
 
-cd random-bg-changer
-Abra o arquivo index.html em seu navegador.
+2. Entre na pasta do projeto:
 
-Clique no botão Change Background Color para alterar o fundo.
+   ```bash
+   cd alternador-aleatorio-de-cor-de-fundo-
+   ```
 
-📖 Créditos
-Projeto inspirado em exercícios e tutoriais do freeCodeCamp, com pequenas melhorias implementadas.
+3. Abra o arquivo `index.html` em um navegador moderno.
 
-📜 Licença
-Este projeto está disponível para uso livre para fins educacionais e de aprendizado.
+Não é necessário instalar dependências para executar a versão estática.
+
+---
+
+## 🎯 Objetivos de Aprendizado
+
+Este projeto permite praticar:
+
+- Manipulação do DOM com JavaScript
+- Seleção e atualização de estilos CSS
+- Geração de resultados aleatórios
+- Tratamento de eventos de clique
+- Organização de arquivos em um projeto front-end
+
+---
+
+## 🔮 Melhorias Futuras
+
+- Permitir gerar cores aleatórias em diferentes tonalidades
+- Adicionar um botão para copiar o código hexadecimal
+- Incluir uma paleta de cores recentes
+- Melhorar a acessibilidade e o contraste da interface
+- Adicionar testes para a lógica de seleção de cores
+
+---
+
+## 👨‍💻 Autor
+
+**André Waldige — AW TECHNOLOGY**
+
+🔗 [GitHub: @awaldige](https://github.com/awaldige)
+
+---
+
+## 📚 Créditos
+
+Projeto inspirado em exercícios e tutoriais do [freeCodeCamp](https://www.freecodecamp.org/).
+
+⭐ Gostou do projeto? Considere deixar uma estrela no repositório!
